@@ -1,5 +1,5 @@
 import React from "react";
-import { connect, Global, css } from "frontity";
+import { connect, Global, css, styled } from "frontity";
 import Link from "@frontity/components/link";
 import Switch from "@frontity/components/switch";
 import List from "./list";
@@ -40,3 +40,7 @@ const Root = ({ state }) => {
 };
 
 export default connect(Root);
+
+const Header = styled.header`
+  background-color: #e5edee;
+`;
